@@ -1,0 +1,187 @@
+.mySlides {display: none}
+.imgsliders {width:100%;height: 80vh!important;}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  /* height: 100vh; */
+  position: relative;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  /* cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  user-select: none;
+  width: 40px;
+height: 80px; */
+cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 34px 24px 34px 14px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.fixed {
+  height: 0.1vh;
+}
+
+/* Position the "next button" to the right */
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 34px 14px 34px 24px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 50px 0px 0px 50px;
+  user-select: none;
+  background: #E43F5A;
+opacity: 0.75;
+right: 0;
+text-align: center;
+/* transform: translate(50%,50%); */
+}
+.prev {
+  left: 0;
+  border-radius: 0px 40px 40px 0px;
+  background: #FFF8F9;
+opacity: 0.75;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  opacity: 1;
+}
+
+/* The dots/bullets/indicators */
+
+.dot{
+  cursor: pointer;
+  margin-left:2px;
+  margin-right: 2px;
+width: 7px;
+height: 19px;
+background: #E43F5A;
+border-radius: 20px;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.dot:nth-child(3),.dot:nth-child(5){
+  cursor: pointer;
+  width: 7px;
+  height: 19px;
+  margin-bottom: 5px;
+  background: #E43F5A;
+  border-radius: 20px;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.dot:nth-child(4) {
+  cursor: pointer;
+  width: 7px;
+  height: 35px;
+  background: #E43F5A;
+  border-radius: 20px;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot:nth-child(2),.dot:nth-child(6) {
+  cursor: pointer;
+  width: 7px;
+  height: 27.34px;
+  background: #E43F5A;
+  border-radius: 20px;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.dots{
+  border: 1px solid #FFF8F9;
+  cursor: pointer;
+  pointer-events: none;
+  width: 8px;
+  margin-bottom: 8px;
+  height: 8px;  
+  border-radius: 20px;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+
+
+.active, .dot:hover {
+  background-color: #FFF8F9!important;
+  border: 1px solid #E43F5A;
+
+}
+
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+.mySlides2 {display: none;border-radius: 20px;}
+.imgsliders2 {width:100%;height: 90vh!important;
+  border-radius: 20px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+
+}
+
+/* Slideshow container */
+.slideshow-container2 {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+
+/* Next & previous buttons */
+.prev2, .next2 {
+  cursor: pointer;
+  padding: 10px;
+  /* margin-top: -22px; */
+  color: #000;
+  font-weight: bold;
+  font-size: 18px;
+  margin-left: 20px;
+  transition: 0.6s ease;
+  border-radius: 20px;
+  user-select: none;
+  background: #FFF8F9;
+  
+}
+
+/* Position the "next button" to the right */
+.next2 {
+  right: 0;
+  border-radius: 20pxs;
+background: #E43F5A;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev2:hover {
+  background-color: #eee;
+}
+.next2:hover {
+  background-color:  rgba(228, 63, 90, 0.774);
+}
+.prev, .next,.text {font-size: 11px}

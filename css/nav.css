@@ -1,0 +1,156 @@
+ /* made by caleb Areeveso [@dope]  */
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+  }
+  
+  /* style the items (options), including the selected item: */
+  .select-items div,.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+  }
+  /* Style the arrow inside the select element: */
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+  }
+
+  /* The snackbar - position it at the bottom and in the middle of the screen */
+#snackbar {
+    visibility: hidden;
+    min-width: 250px; 
+    margin-left: -125px;
+    background-color: #E43F5A; /* Black background color */
+    color: #fff; 
+    font-size: 2rem;
+    text-align: center;
+    border-radius: 2px;
+    padding: 26px;
+    position: fixed;
+    z-index: 1; 
+    left: 50%; 
+    top: 30px;
+  }
+  
+  /* Show the snackbar when clicking on a button (class added with JavaScript) */
+  #snackbar.shows {
+    visibility: visible; 
+    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+    However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 3s, fadeout 2.5s 2.5s;
+    animation: fadein 3s, fadeout 2.5s 2.5s;
+  }
+  
+  /* Animations to fade the snackbar in and out */
+  @-webkit-keyframes fadein {
+    from {right: 0; opacity: 0;}
+    to {right: 30px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {right: 0; opacity: 0;}
+    to {right: 30px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {right: 30px; opacity: 1;}
+    to {right: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {right: 30px; opacity: 1;}
+    to {right: 0; opacity: 0;}
+  }
+  #nav  {
+      top: -9%;
+      position: fixed;
+      z-index: 9999!important;
+      left: 0!important;
+      right: 0!important;
+      width: 100%!important;
+      background-color: #1B1B2F !important;
+      transition: all 0.2s ease;
+  }
+ 
+.change {
+    top: 0%!important;
+}
+.change-2 {
+    top: 8%!important;
+}
+
+.blue {
+  background-color:#162447;
+  margin: 5px 0;
+  display: block;
+  padding: 0px 5px;
+}
+.hover {
+  color: #ffffff;
+  padding: 0 10%;
+}
+.hover:hover {
+  color: #E43F5A!important;
+}
+#nav {
+  width: 100%!important;
+}
+.center {
+  width: 100vw!important;
+}
+#arrow {
+  transition: all 0.2s ease;
+    position: fixed;
+    top: 1px;
+    cursor: pointer;
+    left: 45%;
+    z-index: 999;
+    padding:0px 24px 7px 24px ;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius:0px 0px 50px 50px;
+  background-color: #1B1B2F;
+opacity: 0.75;
+text-align: center;
+}
+.h-me {
+  position: absolute;
+  transform: translateX(135%);
+  top: 10px;
+  padding: 5px;
+  left: 30%!important;
+  font-size: 10px;
+  border-radius: 3px;
+}
+#arrow .h-me {
+  display: none;
+}
+
+#arrow:hover .h-me {
+  display: block;
+}
+
+#arrup {
+    display: none;
+}
+.change-3 {
+  display: inline!important;
+}
+.change-4 {
+  display: none!important;
+}
+#arrow:hover {
+    opacity: 1;
+}

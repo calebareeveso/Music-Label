@@ -1,0 +1,97 @@
+ /* made by caleb Areeveso [@dope]  */
+
+
+/* small screen  */
+
+.show {
+    display: none!important;
+}
+.loader {
+    width: 20vw!important;
+    height: 20vh!important;
+  }
+
+.logo {
+    position: absolute;
+    top: 5px;
+    right: 45vw;
+}
+.point:hover {
+    opacity: 0.5;
+    cursor: pointer;
+    }
+
+    /* medium screens  */
+    @media (min-width:900px){
+.center {
+    padding-left: 14%!important;
+}
+
+    }
+@media (max-width:1000px){
+    
+    .slideshow-container {
+        height: 60vh!important;
+      }
+      .hng-text{
+          font-size: 15px!important;
+      }
+    .ss {
+        font-size: 30px!important;
+    }
+}
+@media (max-width:800px){
+    asa {
+        border-radius:20px;
+        font-weight: 300;
+        padding: 2px;
+        font-size: 9pz;
+    }
+    .red {
+        font-size: 1.3rem;
+    }
+    .big-red {
+    font-size: 2.2rem!important;
+    }
+   
+    .show {
+        display: block!important;
+    }
+    .none {
+        display: none!important;
+    }
+    .fakeimg {
+      width: 100%!important;
+      }
+      .point {
+      width: 80%!important;
+      }
+      .tags {
+          font-size: 15px;
+          transform: translateX(-10%)!important;
+      }
+     
+      
+        .logo {
+            /* width:53%!important; */
+            right: 46vw!important;
+              top: 0px;
+            }
+           
+            .jumbotron {
+                border-radius: 0px!important;
+              }
+  }
+
+  /* smaller screens  */
+  @media (max-width:500px){
+    .logo {
+          right: 43vw!important;
+          top: 0px;
+        }
+        .size {
+            height: 20px!important;
+        }
+  }
+
+  /* small screens end  */
